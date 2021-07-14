@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/konw_weather_in_your_place"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:gravity="center"
+      android:layout_marginTop="10dp">
+
+  </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/background_for_editbox"
+        android:id="@+id/edittextid"></EditText>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Go"
+        android:id="@+id/buttonid"
+        android:background="@drawable/for_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"></androidx.appcompat.widget.AppCompatButton>
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="15dp"
+       android:orientation="vertical">
+     <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+       android:elevation="20dp"
+       app:cardCornerRadius="9dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+         android:orientation="vertical">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="your result"
+             android:gravity="center"
+             android:padding="6dp"
+             android:background="@drawable/for_result"
+             android:layout_marginTop="16dp"
+             android:id="@+id/resultid"
+             android:textColor="@color/black"
+             android:textStyle="bold">
+
+         </TextView>
+
+       </LinearLayout>
+     </androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

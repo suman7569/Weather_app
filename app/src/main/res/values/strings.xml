@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Weather_API</string>
+    <string name="konw_weather_in_your_place">Know Weather in your Place</string>
+</resources>
